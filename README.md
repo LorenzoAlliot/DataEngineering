@@ -32,10 +32,10 @@ Especificamente se utilizarán los endpoints:
 *   /standings: que según la documentación se actualiza cada hora.
 *   /teams: ue según la documentación se actualiza varias veces a la semana
 
-##Distribución de archivos
-*   Los archivos a tener en cuenta son:
-dockerfile/: Archivo para crear la imagen necesaria para utilizar Airflow.
-commons/: Carpeta con los archivos .py que contienen las funciones y transformaciones para llamar desde los DAGs.
-config/: Carpeta con el archivo que contiene las credenciales y su script con la funcion que lo parsea.
-ProyectoFinal-Alliot.py: DAG principal que ejecuta el pipeline de extracción, transformación y carga de datos de usuarios.
-requierements.txt: archivo con las librerias utilizadas para instalar en la imagen de docker.
+## Distribución de archivos
+**Los archivos a tener en cuenta son:**
+* dockerfile/: Archivo para crear la imagen necesaria para utilizar Airflow.
+* commons/: Carpeta con los archivos .py que contienen las funciones y transformaciones para llamar desde los DAGs.
+* config/: Carpeta con el archivo que contiene las credenciales y su script con la funcion que lo parsea.
+* ProyectoFinal-Alliot.py: DAG principal que ejecuta el pipeline de extracción, transformación y carga de datos de usuarios.
+* requierements.txt: archivo con las librerias utilizadas para instalar en la imagen de docker.
