@@ -83,3 +83,4 @@ El DAG esta configurando para enviar mails en caso de ejecucion correcta o error
 ```bash
 x.sendmail('lorenzoalliot@gmail.com', 'mail@destinatario', message)
 ```
+Una vez realizado esto deberías poder ejecutar DAG sin problemas y debería llegar un mail con la notificación correspondiente. 
