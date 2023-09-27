@@ -51,7 +51,7 @@ Para ejecutar este pipeline deberás tener instalado:
 * Python
 
 ### Pasos para ejecutar pipeline
-*Primero debes abrir docker y asegurarte de que esté funcionando correctamente.
+* Primero debes abrir docker y asegurarte de que esté funcionando correctamente.
 * Clona este repositorio en tu máquina local:
 ```bash
 git clone https://github.com/LorenzoAlliot/DataEngineering.git
@@ -73,8 +73,9 @@ docker run --rm -d -p 8080:8080 [nombre_de_imagen]
 * Se debería abrir la interfaz de AirFlow
 ![image](https://github.com/LorenzoAlliot/DataEngineering/assets/113041882/7a45d642-ea1a-477f-b655-c00d4ed5f6e3)
 * Las credenciales son:
-* - username: admin
-  - password: admin
+ - username: admin
+ - password: admin
+
 Desde aquí podrás administrar los DAGs
 
 ### Puntos a tener en cuenta
