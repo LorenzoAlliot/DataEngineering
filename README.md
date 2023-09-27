@@ -46,3 +46,39 @@ Especificamente se utilizarán los endpoints:
 * requierements.txt : archivo con las librerias utilizadas para instalar en la imagen de docker.
 
 ## Instrucciones de uso
+Para ejecutar este pipeline deberás tener instalado:
+* Docker
+* Python
+
+### Pasos para ejecutar pipeline
+*Primero debes abrir docker y asegurarte de que esté funcionando correctamente.
+* Clona este repositorio en tu máquina local:
+```bash
+git clone https://github.com/LorenzoAlliot/DataEngineering.git
+```
+* Abre la terminal en tu PC y escribe este comando para posicionarse en el directorio del Dockerfile
+```bash
+cd [ruta_del_Dockerfile]
+```
+* Una vez en posicionados en el directorio ejecuta el comando:
+```bash
+docekr build . -t [nombre_de_imagen]
+```
+Esto creará la imagen de docker
+* Una vez creada la imagen procedemos a crear el contenedor con el siguiente comando:
+```bash
+docker run --rm -d -p 8080:8080 [nombre_de_imagen]
+```
+* Una vez ejecutado esto ir a  https://localhost:8080/
+* Se debería abrir la interfaz de AirFlow
+![image](https://github.com/LorenzoAlliot/DataEngineering/assets/113041882/7a45d642-ea1a-477f-b655-c00d4ed5f6e3)
+* Las credenciales son:
+* - username: admin
+  - password: admin
+Desde aquí podrás administrar los DAGs
+
+### Puntos a tener en cuenta
+El DAG esta configurando para enviar mails en caso de ejecucion correcta o error, recomiendo modificar el script email y modificar la linea 18 y 33
+```bash
+x.sendmail('lorenzoalliot@gmail.com', 'mail@destinatario', message)
+```
