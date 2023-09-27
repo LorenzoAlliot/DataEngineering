@@ -1,4 +1,9 @@
 # Proyecto final DataEngineering
+![Python](https://img.shields.io/badge/Python-blue?logo=python&logoColor=white)
+![Spark](https://img.shields.io/badge/Spark-E25A1C?logo=apache%20spark&logoColor=white)
+![Airflow](https://img.shields.io/badge/Airflow-017CEE?logo=apache%20airflow&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white)
+![Redshift](https://img.shields.io/badge/Redshift-E71A2A?logo=amazon%20redshift&logoColor=white)
 
 ## Abstract
 **Los objetivos de este proyecto son:**
