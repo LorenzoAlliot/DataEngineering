@@ -9,7 +9,7 @@
 * Generar contenedores en Docker para su ejecución
 * Programar su ejecución mediante DAGs en AirFlow
 
-**El tema del proyecto es:** 
+**El tema del proyecto es:**
 Las estadísticas de los equipos argentinos que jueguen distintos torneos locales que sean del año 2023.
 
 El objetivo de la extracción de la API es obtener las estadísticas de los equipos argentinos en los torneos locales que sean del año 2023.
