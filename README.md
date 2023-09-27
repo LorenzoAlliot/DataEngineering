@@ -28,14 +28,16 @@ La API es pública pero con la limitación de un máximo de 100 llamadas por dí
 En este link se puede ver la documentación https://www.api-football.com/documentation-v3#section/Introduction
 
 Especificamente se utilizarán los endpoints:
-*   /league: que según la documentación se actualiza varias veces al día
-*   /standings: que según la documentación se actualiza cada hora.
-*   /teams: ue según la documentación se actualiza varias veces a la semana
+* /league: que según la documentación se actualiza varias veces al día
+* /standings: que según la documentación se actualiza cada hora.
+* /teams: ue según la documentación se actualiza varias veces a la semana
 
 ## Distribución de archivos
 **Los archivos a tener en cuenta son:**
-* dockerfile/ : Archivo para crear la imagen necesaria para utilizar Airflow.
-* commons/ : Carpeta con los archivos .py que contienen las funciones y transformaciones para llamar desde los DAGs.
-* config/ : Carpeta con el archivo que contiene las credenciales y su script con la funcion que lo parsea.
+* `dockerfile/`: Archivo para crear la imagen necesaria para utilizar Airflow.
+* `commons/` : Carpeta con los archivos .py que contienen las funciones y transformaciones para llamar desde los DAGs.
+* `config/` : Carpeta con el archivo que contiene las credenciales y su script con la funcion que lo parsea.
 * ProyectoFinal-Alliot.py : DAG principal que ejecuta el pipeline de extracción, transformación y carga de datos de usuarios.
 * requierements.txt : archivo con las librerias utilizadas para instalar en la imagen de docker.
+
+## Instrucciones de uso
